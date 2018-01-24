@@ -77,6 +77,7 @@
 		E1106B4820190BEE00EBC4BD /* iot */ = {
 			isa = PBXGroup;
 			children = (
+				E12367A52018FF77003869E3 /* model */,
 				E1106B4920190BEE00EBC4BD /* AppDelegate.swift */,
 				E1106B4B20190BEE00EBC4BD /* ViewController.swift */,
 				E1106B4D20190BEE00EBC4BD /* Main.storyboard */,
@@ -94,6 +95,13 @@
 				E1106B6020190BEE00EBC4BD /* Info.plist */,
 			);
 			path = iotTests;
+			sourceTree = "<group>";
+		};
+		E12367A52018FF77003869E3 /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
