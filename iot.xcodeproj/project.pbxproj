@@ -13,6 +13,8 @@
 		E1106B5120190BEE00EBC4BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1106B5020190BEE00EBC4BD /* Assets.xcassets */; };
 		E1106B5420190BEE00EBC4BD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1106B5220190BEE00EBC4BD /* LaunchScreen.storyboard */; };
 		E1106B5F20190BEE00EBC4BD /* iotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1106B5E20190BEE00EBC4BD /* iotTests.swift */; };
+		E12488D1201902800045DEDB /* iotItemTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12488D0201902800045DEDB /* iotItemTests.swift */; };
+		E12488D3201902C50045DEDB /* iotItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12488D2201902C50045DEDB /* iotItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,8 @@
 		E1106B5A20190BEE00EBC4BD /* iotTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iotTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1106B5E20190BEE00EBC4BD /* iotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iotTests.swift; sourceTree = "<group>"; };
 		E1106B6020190BEE00EBC4BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E12488D0201902800045DEDB /* iotItemTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iotItemTests.swift; sourceTree = "<group>"; };
+		E12488D2201902C50045DEDB /* iotItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iotItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +97,7 @@
 			children = (
 				E1106B5E20190BEE00EBC4BD /* iotTests.swift */,
 				E1106B6020190BEE00EBC4BD /* Info.plist */,
+				E12488D0201902800045DEDB /* iotItemTests.swift */,
 			);
 			path = iotTests;
 			sourceTree = "<group>";
@@ -100,6 +105,7 @@
 		E12367A52018FF77003869E3 /* model */ = {
 			isa = PBXGroup;
 			children = (
+				E12488D2201902C50045DEDB /* iotItem.swift */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -209,6 +215,7 @@
 			files = (
 				E1106B4C20190BEE00EBC4BD /* ViewController.swift in Sources */,
 				E1106B4A20190BEE00EBC4BD /* AppDelegate.swift in Sources */,
+				E12488D3201902C50045DEDB /* iotItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -217,6 +224,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E1106B5F20190BEE00EBC4BD /* iotTests.swift in Sources */,
+				E12488D1201902800045DEDB /* iotItemTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
