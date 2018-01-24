@@ -15,6 +15,7 @@
 		E1106B5F20190BEE00EBC4BD /* iotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1106B5E20190BEE00EBC4BD /* iotTests.swift */; };
 		E12488D1201902800045DEDB /* iotItemTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12488D0201902800045DEDB /* iotItemTests.swift */; };
 		E12488D3201902C50045DEDB /* iotItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12488D2201902C50045DEDB /* iotItem.swift */; };
+		E12488E02019330E0045DEDB /* Moscapsule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E12488DA201907A20045DEDB /* Moscapsule.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -24,6 +25,27 @@
 			proxyType = 1;
 			remoteGlobalIDString = E1106B4520190BEE00EBC4BD;
 			remoteInfo = iot;
+		};
+		E12488D9201907A20045DEDB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E12488D4201907A20045DEDB /* Moscapsule.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 09CF6B131A21F78700A97383;
+			remoteInfo = Moscapsule;
+		};
+		E12488DB201907A20045DEDB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E12488D4201907A20045DEDB /* Moscapsule.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 09CF6B1E1A21F78700A97383;
+			remoteInfo = MoscapsuleTests;
+		};
+		E12488DD20190E660045DEDB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E12488D4201907A20045DEDB /* Moscapsule.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 09CF6B121A21F78700A97383;
+			remoteInfo = Moscapsule;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -40,6 +62,7 @@
 		E1106B6020190BEE00EBC4BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E12488D0201902800045DEDB /* iotItemTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iotItemTests.swift; sourceTree = "<group>"; };
 		E12488D2201902C50045DEDB /* iotItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iotItem.swift; sourceTree = "<group>"; };
+		E12488D4201907A20045DEDB /* Moscapsule.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Moscapsule.xcodeproj; path = Moscapsule/Moscapsule.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E12488E02019330E0045DEDB /* Moscapsule.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,9 +87,11 @@
 		E1106B3D20190BEE00EBC4BD = {
 			isa = PBXGroup;
 			children = (
+				E12488D4201907A20045DEDB /* Moscapsule.xcodeproj */,
 				E1106B4820190BEE00EBC4BD /* iot */,
 				E1106B5D20190BEE00EBC4BD /* iotTests */,
 				E1106B4720190BEE00EBC4BD /* Products */,
+				E12488DF2019330E0045DEDB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -110,6 +136,22 @@
 			path = model;
 			sourceTree = "<group>";
 		};
+		E12488D5201907A20045DEDB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E12488DA201907A20045DEDB /* Moscapsule.framework */,
+				E12488DC201907A20045DEDB /* MoscapsuleTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E12488DF2019330E0045DEDB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -124,6 +166,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				E12488DE20190E660045DEDB /* PBXTargetDependency */,
 			);
 			name = iot;
 			productName = iot;
@@ -180,6 +223,12 @@
 			mainGroup = E1106B3D20190BEE00EBC4BD;
 			productRefGroup = E1106B4720190BEE00EBC4BD /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = E12488D5201907A20045DEDB /* Products */;
+					ProjectRef = E12488D4201907A20045DEDB /* Moscapsule.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				E1106B4520190BEE00EBC4BD /* iot */,
@@ -187,6 +236,23 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		E12488DA201907A20045DEDB /* Moscapsule.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Moscapsule.framework;
+			remoteRef = E12488D9201907A20045DEDB /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		E12488DC201907A20045DEDB /* MoscapsuleTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = MoscapsuleTests.xctest;
+			remoteRef = E12488DB201907A20045DEDB /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		E1106B4420190BEE00EBC4BD /* Resources */ = {
@@ -235,6 +301,11 @@
 			isa = PBXTargetDependency;
 			target = E1106B4520190BEE00EBC4BD /* iot */;
 			targetProxy = E1106B5B20190BEE00EBC4BD /* PBXContainerItemProxy */;
+		};
+		E12488DE20190E660045DEDB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Moscapsule;
+			targetProxy = E12488DD20190E660045DEDB /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
